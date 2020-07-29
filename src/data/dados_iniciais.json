@@ -1,21 +1,21 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
+      "titulo": "Chill",
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
+        "text": "Just Chill",
         "url": "https://www.alura.com.br/cursos-online-front-end"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Capybara with mandarin orange on head in the open-air bath",
+          "url": "https://www.youtube.com/watch?v=QUqCWkPlLLc"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Why Do Animals Like Capybaras So Much?",
+          "url": "https://www.youtube.com/watch?v=zKJJOdW3Jyk"
         },
         {
           "titulo": "Componentização com VanillaJS #AluraMais",
@@ -44,37 +44,37 @@
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Fun Facts",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
+        "text": "Did you know this?",
         "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Why Do Animals Like Capybaras So Much?",
+          "url": "https://www.youtube.com/watch?v=zKJJOdW3Jyk"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Pets 101: Capybaras",
+          "url": "https://www.youtube.com/watch?v=DYGz3xqiR2U"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "How big is the world's largest rodent?",
+          "url": "https://www.youtube.com/watch?v=CUODe6RaQHk"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Capybara and Caiman",
+          "url": "https://www.youtube.com/watch?v=LBax1Pbsfcc"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Capybara Opening Doors",
+          "url": "https://www.youtube.com/watch?v=DM9cJtwUUsw"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Funny",
       "cor": "#9cd33b",
       "link_extra": {
         "text": "Cursos de Data Science na Alura",

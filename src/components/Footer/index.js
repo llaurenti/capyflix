@@ -1,11 +1,12 @@
 import React from 'react';
 import { FooterBase } from './styles';
+import Llaurenti from '../../assets/img/github-profile.png';
 
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+      <a href="https://github.com/llaurenti/">
+        <img height="20px" src={ Llaurenti } alt="My Github" />
       </a>
       <p>
         Orgulhosamente criado durante a

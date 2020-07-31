@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
 
 function CategoryRegistration() {
 
     const initialValues = {
         name: '',
         description: '',
-        color: ''
+        color: '',
     }
 
     const [categories, setCategories] = useState([]);
@@ -22,11 +23,9 @@ function CategoryRegistration() {
     }
 
     function handleChange(event) {
-        const { getAttribute, value } = event.target;
- 
         setValue(
-            getAttribute('name'),
-            value
+            event.target.getAttribute('name'),
+            event.target.value
         );
     }
 
@@ -45,15 +44,13 @@ function CategoryRegistration() {
                 setValues({ initialValues })
             }}>
                 <div>
-                    <label>
-                        Category name:
-                        <input
-                            type="text"
-                            name="name"
-                            value={values.name}
-                            onChange={handleChange}
-                        />
-                    </label>
+                    <FormField
+                        label="Category"
+                        type="text"
+                        name="name"
+                        value={values.name}
+                        onChange={handleChange}
+                    />
 
                     <label>
                         Description:
@@ -64,16 +61,13 @@ function CategoryRegistration() {
                         />
                     </label>
 
-                    <label>
-
-                        Color:
-                    <input
-                            name="color"
-                            type="color"
-                            value={values.color}
-                            onChange={handleChange}
-                        />
-                    </label>
+                    <FormField
+                        label="Color"
+                        name="color"
+                        type="color"
+                        value={values.color}
+                        onChange={handleChange}
+                    />
                 </div>
 
                 <button>

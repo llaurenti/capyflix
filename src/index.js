@@ -12,12 +12,11 @@ const PageNotFound = () => (<div>404 Not Found</div>);
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" component={Home}  exact />
+      <Route path="/" component={Home} exact />
       <Route path="/register/video" component={VideoRegistration} />
       <Route path="/register/category" component={CategoryRegistration} />
       <Route component={PageNotFound} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-

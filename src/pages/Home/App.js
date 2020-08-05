@@ -1,16 +1,56 @@
-import React from 'react';
-import Menu from '../../components/Menu';
-import dadosIniciais from '../../data/dados_iniciais.json';
+import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
+import categoriesRepository from '../../repositories/categories';
+import PageDefault from '../../components/PageDefault';
 
 function Home() {
-  return (
-    <div style={{ background: "#141414" }}>
-      <Menu />
+  const [initialData, setInitialData] = useState([]);
 
-      <BannerMain
+  useEffect(() => {
+    categoriesRepository.getAllWithVideos()
+      .then((categoriesWithVideos) => {
+        console.log('Categories w/ videos', categoriesWithVideos[0]);
+        console.log('First video', categoriesWithVideos[0].videos[0]);
+
+        setInitialData(categoriesWithVideos);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
+  return (
+    <PageDefault paddingAll={0}>
+
+      {initialData.map((category, index) => {
+        if (index === 0) {
+          return (
+            <div key={category.id}>
+              <BannerMain
+                videoTitle={initialData[0].videos[0].title}
+                url={initialData[0].videos[0].url}
+                videoDescription="Aren't capybaras wonderful?"
+              />
+              {console.log(initialData)}
+              <Carousel
+                ignoreFirstVideo
+                category={initialData[0]}
+              />
+            </div>
+          );
+        }
+
+        console.log('category:', category);
+        return (
+          <Carousel
+            key={category.id}
+            category={category}
+          />
+        );
+      })}
+
+      {/* <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
         videoDescription={"Aren't capybaras lovely?"}
@@ -39,11 +79,9 @@ function Home() {
 
       <Carousel
         category={dadosIniciais.categorias[5]}
-      />
+      /> */}
 
-      <Footer />
-
-    </div>
+    </PageDefault>
   );
 }
 

@@ -3,52 +3,40 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
+import config from '../../../config';
 
 function CategoryRegistration() {
   const initialValues = {
-    name: '',
+    title: '',
     description: '',
     color: '',
   };
 
+  const { handleChange, values, clearForm } = useForm(initialValues);
+
   const [categories, setCategories] = useState([]);
-  const [values, setValues] = useState(initialValues);
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(event) {
-    setValue(
-      event.target.getAttribute('name'),
-      event.target.value,
-    );
-  }
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categories';
-      fetch(URL)
-        .then(async (serverResponse) => {
-          if (serverResponse.ok) {
-            const response = await serverResponse.json();
-            console.log(response);
-            setCategories(response);
-            return;
-          }
-          throw new Error('Unable to fetch data');
-        });
-    }
+    fetch(config.THE_MOST_TOP_URL)
+      .then(async (serverResponse) => {
+        if (serverResponse.ok) {
+          const response = await serverResponse.json();
+          setCategories([
+            ...response,
+          ]);
+          return;
+        }
+        throw new Error('Unable to fetch data');
+      });
   }, []);
 
   return (
     <PageDefault>
       <h1>
         Category registration:
-        {values.name}
+        {values.title}
       </h1>
 
       <form onSubmit={(event) => {
@@ -58,33 +46,24 @@ function CategoryRegistration() {
           values,
         ]);
 
-        setValues({ initialValues });
+        clearForm();
       }}
       >
         <div>
           <FormField
             label="Category"
-            type="text"
-            name="name"
-            value={values.name}
+            name="title"
+            value={values.title}
             onChange={handleChange}
           />
 
           <FormField
             label="Description"
-            tag="textarea"
+            type="textarea"
+            name="description"
             value={values.description}
             onChange={handleChange}
           />
-
-          {/* <label>
-            Description:
-            <textarea
-              name="description"
-              value={values.description}
-              onChange={handleChange}
-            />
-          </label> */}
 
           <FormField
             label="Color"
@@ -95,15 +74,15 @@ function CategoryRegistration() {
           />
         </div>
 
-        <button>
+        <Button>
           Register
-        </button>
+        </Button>
       </form>
 
       <ul>
         {categories.map((category) => (
-          <li key={`${category.name}`}>
-            {category.name}
+          <li key={`${category.title}`}>
+            {category.title}
           </li>
         ))}
       </ul>

@@ -2,191 +2,163 @@
   "categories": [
     {
       "id": 1,
-      "name": "Hup",
-      "description": "Front End",
-      "color": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      "title": "Random",
+      "color": "#6BD1FF"
     },
     {
       "id": 2,
-      "title": "Back End",
-      "color": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      }
+      "title": "Funny",
+      "color": "#00C86F"
     },
     {
       "id": 3,
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
-      }
+      "title": "Cute",
+      "color": "#9cd33b"
     },
     {
       "id": 4,
-      "titulo": "Filmes",
-      "cor": "orange"
-    },
-    {
-      "id": 5,
-      "titulo": "Games",
-      "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      "title": "Fun Facts",
+      "color": "orange"
     }
   ],
   "videos": [
     {
       "id": 1,
-      "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "categoryId": 1,
+      "title": "Hup Hup",
+      "url": "https://www.youtube.com/watch?v=QUqCWkPlLLc"
     },
     {
       "id": 2,
-      "categoriaId": 1,
-      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "categoryId": 1,
+      "title": "Why Do Animals Like Capybaras So Much?",
+      "url": "https://www.youtube.com/watch?v=zKJJOdW3Jyk"
     },
     {
       "id": 3,
-      "categoriaId": 1,
-      "titulo": "Componentização com VanillaJS #AluraMais",
-      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+      "categoriId": 1,
+      "title": "Capybara eating an Ice Pop",
+      "url": "https://www.youtube.com/watch?v=C7xyoPqYkYM"
     },
     {
       "id": 4,
-      "categoriaId": 1,
-      "titulo": "Pare de chutar e aprenda a display: inline #01",
-      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+      "categorieId": 1,
+      "title": "Capybara St. PATRICK'S DAY",
+      "url": "https://www.youtube.com/watch?v=GTGTbk90Eow"
     },
     {
       "id": 5,
-      "categoriaId": 1,
-      "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+      "categoryId": 1,
+      "title": "Capybara Farts!!",
+      "url": "https://www.youtube.com/watch?v=guibQH94rCM"
     },
     {
       "id": 6,
-      "categoriaId": 1,
-      "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+      "categoryId": 1,
+      "title": "Kitten not a fan of the capybara ride",
+      "url": "https://www.youtube.com/watch?v=6FBwkjGnGO0"
     },
     {
       "id": 7,
-      "categoriaId": 1,
-      "titulo": "Novidades do Angular v9",
-      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+      "categoryId": 1,
+      "title": "Dog and Capybara",
+      "url": "https://www.youtube.com/watch?v=SCwcJsBYL3o"
+    },
+    {
+      "id": 7,
+      "categoryId": 1,
+      "title": "Capybara Hanging out with piggies",
+      "url": "https://www.youtube.com/watch?v=hH-248MShZQ"
     },
     {
       "id": 8,
-      "categoriaId": 2,
-      "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+      "categoryId": 2,
+      "title": "Ten of the Funniest, Cutest and Most Lovable Capybaras You Are Ever Going to See",
+      "url": "https://www.youtube.com/watch?v=qfe1ts-pJUg"
     },
     {
       "id": 9,
-      "categoriaId": 2,
-      "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+      "categoryId": 2,
+      "title": "The Best Capybara Song in the Universe (Funny and Cute Video!) - BINGOBONGO Learning!",
+      "url": "https://www.youtube.com/watch?v=rRyIHNK1dNY"
     },
     {
       "id": 10,
-      "categoriaId": 2,
-      "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+      "categoryId": 2,
+      "title": "Capybara nap with Guineapigs カピバラとモルモットのごすい",
+      "url": "https://www.youtube.com/watch?v=SZsRxF6Zjhw"
     },
     {
       "id": 11,
-      "categoriaId": 2,
-      "titulo": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+      "categoryId": 2,
+      "title": "This is my life now!",
+      "url": "https://www.youtube.com/watch?v=FiVQp-AwXcA"
     },
     {
       "id": 12,
-      "categoriaId": 2,
-      "titulo": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+      "categoryId": 2,
+      "title": "Capybara VS Huge watermelon 2014 in Nagasaki",
+      "url": "https://www.youtube.com/watch?v=IaLGdRx7prA"
     },
     {
       "id": 13,
-      "categoriaId": 3,
-      "titulo": "Teste de Turing",
-      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+      "categoryId": 3,
+      "title": "Adorable Capybara Uses His Cute Little Tongue ハンサムなカピバラの演奏ロープ",
+      "url": "https://www.youtube.com/watch?v=tza4YuZBbX4"
     },
     {
       "id": 14,
-      "categoriaId": 3,
-      "titulo": "O que é Data Science?",
-      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+      "categoryId": 3,
+      "title": "Baby Capybara Playing - CUTEST Compilation  ",
+      "url": "https://www.youtube.com/watch?v=m9UE83BCROM"
     },
     {
       "id": 15,
-      "categoriaId": 3,
-      "titulo": "Melhor forma de aprender Python",
-      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+      "categoryId": 3,
+      "title": "Friendly Capabara: Cute Compilation",
+      "url": "https://www.youtube.com/watch?v=YfPYtaPCCWA"
     },
     {
       "id": 16,
-      "categoriaId": 3,
-      "titulo": "Como ingressar no mercado de Data Science?",
-      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+      "categoryId": 3,
+      "title": "Cutest Capybara Being Adorable in the Pool かわいいカピバラは、プールで遊ぶ",
+      "url": "https://www.youtube.com/watch?v=6LxK7iFChVI"
     },
     {
       "id": 17,
-      "categoriaId": 4,
-      "titulo": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+      "categoryId": 4,
+      "title": "Capybara Opening Doors",
+      "url": "https://www.youtube.com/watch?v=DM9cJtwUUsw"
     },
     {
       "id": 18,
-      "categoriaId": 4,
-      "titulo": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+      "categoryId": 4,
+      "title": "Capybara and Caiman",
+      "url": "https://www.youtube.com/watch?v=LBax1Pbsfcc"
     },
     {
       "id": 19,
-      "categoriaId": 4,
-      "titulo": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+      "categoryId": 4,
+      "title": "How big is the world's largest rodent?",
+      "url": "https://www.youtube.com/watch?v=CUODe6RaQHk"
     },
     {
       "id": 20,
-      "categoriaId": 4,
-      "titulo": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+      "categoryId": 4,
+      "title": "All about Capybaras",
+      "url": "https://www.youtube.com/watch?v=qkqpexNhRmU"
     },
     {
-      "id": 21,
-      "categoriaId": 5,
-      "titulo": "Final Fantasy 7",
-      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+      "title": "Hup",
+      "url": "https://www.youtube.com/watch?v=rdtEhzGnWkA",
+      "categoryId": 1,
+      "id": 21
     },
     {
-      "id": 22,
-      "categoriaId": 5,
-      "titulo": "Assassins Creed Valhalla",
-      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
-    },
-    {
-      "id": 23,
-      "categoriaId": 5,
-      "titulo": "God of War 4",
-      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-    },
-    {
-      "id": 24,
-      "categoriaId": 5,
-      "titulo": "Resident Evil 8",
-      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+      "title": "Hup",
+      "url": "https://www.youtube.com/watch?v=SCwcJsBYL3o",
+      "categoryId": 1,
+      "id": 22
     }
   ]
 }

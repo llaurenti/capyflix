@@ -12,9 +12,9 @@ function VideoRegistration() {
   const [categories, setCategories] = useState([]);
   const categoryTitles = categories.map(({ title }) => title);
   const { handleChange, values } = useForm({
-    title: 'Hup',
+    title: 'Hup hup',
     url: 'https://www.youtube.com/watch?v=SCwcJsBYL3o',
-    category: 'Hup',
+    category: 'Random',
   });
 
   useEffect(() => {
@@ -33,16 +33,7 @@ function VideoRegistration() {
       <form onSubmit={(event) => {
         event.preventDefault();
 
-        const chosenCategory = categories.find((category) =>{
-          console.log(category);
-          return category.titulo === values.categoria;
-        });
-        console.log('the chosen category is:', chosenCategory);
-
-        // const categoriaEscolhida = categories.find((categoria) => {
-        //   return categoria.titulo === values.categoria;
-        // });
-        // console.log(categoriaEscolhida);
+        const chosenCategory = categories.find((category) => category.titulo === values.categoria);
 
         videosRepository.create({
           title: values.title,
